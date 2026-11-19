@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "playwright-automation-2",
   "version": "1.0.0",
   "description": "",
@@ -6,6 +7,12 @@
   "directories": {
     "test": "tests"
   },
+=======
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+>>>>>>> origin/playwright-automation
   "scripts": {},
   "keywords": [],
   "author": "",
