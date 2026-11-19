@@ -24,17 +24,3 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
-
-
-        - name: Install Visual C++ Redistributable
-  shell: pwsh
-  run: |
-    $url = "https://aka.ms/vc14/vc_redist.x64.exe"
-    Invoke-WebRequest $url -OutFile vc_redist.x64.exe
-    Start-Process .\vc_redist.x64.exe -ArgumentList "/install", "/quiet", "/norestart" -Wait
-
-- name: Install Playwright browsers
-  run: npx playwright install chromium
-
-- name: Run Playwright tests
-  run: npx playwright test
